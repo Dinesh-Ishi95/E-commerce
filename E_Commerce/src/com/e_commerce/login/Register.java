@@ -1,4 +1,4 @@
-package com.e_commerce.miniproject;
+package com.e_commerce.login;
 
 public class Register {
 
