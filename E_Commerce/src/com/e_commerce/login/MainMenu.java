@@ -1,0 +1,42 @@
+package com.e_commerce.login;
+
+
+import java.io.IOException;
+import java.util.*;
+
+public class MainMenu {
+	static Scanner in = new Scanner(System.in);
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("----ONLINE SHOPPING SYSTEM----");
+		System.out.println("Choose whether you are an Admin or a Customer");
+		System.out.println("1.Admin \n2.Customer \n3.Exit ");
+		int choice = in.nextInt();
+
+		switch (choice) {
+		case 1:
+			Admin.main(null);
+			break;
+		case 2:
+			Login.main(null);
+			break;
+		case 3:
+			Items.main(null);
+			break;
+		case 4:
+			ShoppingCart.main(null);
+			break;
+		case 5:
+			CheckOut.main(null);
+			break;
+		case 6:
+//			ShoppingCart.main(null);
+//			break;
+			System.out.println("Exiting from program..\nThankyou for using this shopping system!");
+			System.exit(0);
+		default:
+			System.out.print("Invalid Choice\n");
+		}
+	}
+}
+
